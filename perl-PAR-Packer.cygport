@@ -1,0 +1,26 @@
+CPAN_AUTHOR=rschupp
+inherit perl
+
+NAME="perl-PAR-Packer"
+VERSION=1.034
+RELEASE=2
+CATEGORY="Perl"
+SUMMARY="Perl Archive (PAR) generator module"
+DESCRIPTION="PAR is a Cross-Platform Packaging and Deployment tool,
+dubbed as a cross between Java's JAR and Perl2EXE/PerlApp."
+SRC_URI+=" par.png"
+
+PATCH_URI="cygcrypt.patch"
+
+MAKEOPTS+=" -j1"
+
+perl_PAR_Packer_REQUIRES="perl-Tk-ColoredButton perl-Tk-EntryCheck perl-Tk-Getopt perl-Tk-Pod"
+
+src_install() {
+	cd ${B}
+	cyginstall
+	perl_postinst
+
+	doicon ${S}/par.png
+	make_desktop_entry tkpp "Tkpp" par "Development;Building"
+}
