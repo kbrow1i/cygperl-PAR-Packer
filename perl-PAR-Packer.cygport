@@ -2,8 +2,8 @@ CPAN_AUTHOR=rschupp
 inherit perl
 
 NAME="perl-PAR-Packer"
-VERSION=1.034
-RELEASE=2
+VERSION=1.035
+RELEASE=1
 CATEGORY="Perl"
 SUMMARY="Perl Archive (PAR) generator module"
 DESCRIPTION="PAR is a Cross-Platform Packaging and Deployment tool,
