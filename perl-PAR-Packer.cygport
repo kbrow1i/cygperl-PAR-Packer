@@ -2,15 +2,13 @@ CPAN_AUTHOR=rschupp
 inherit perl
 
 NAME="perl-PAR-Packer"
-VERSION=1.035
+VERSION=1.036
 RELEASE=1
 CATEGORY="Perl"
 SUMMARY="Perl Archive (PAR) generator module"
 DESCRIPTION="PAR is a Cross-Platform Packaging and Deployment tool,
 dubbed as a cross between Java's JAR and Perl2EXE/PerlApp."
 SRC_URI+=" par.png"
-
-PATCH_URI="cygcrypt.patch"
 
 MAKEOPTS+=" -j1"
 
