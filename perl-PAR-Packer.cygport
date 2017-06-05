@@ -2,7 +2,7 @@ CPAN_AUTHOR=rschupp
 inherit perl
 
 NAME="perl-PAR-Packer"
-VERSION=1.036
+VERSION=1.037
 RELEASE=1
 CATEGORY="Perl"
 SUMMARY="Perl Archive (PAR) generator module"
@@ -12,13 +12,13 @@ SRC_URI+=" par.png"
 
 MAKEOPTS+=" -j1"
 
-perl_PAR_Packer_REQUIRES="perl-Tk-ColoredButton perl-Tk-EntryCheck perl-Tk-Getopt perl-Tk-Pod"
+# perl_PAR_Packer_REQUIRES="perl-Tk-ColoredButton perl-Tk-EntryCheck perl-Tk-Getopt perl-Tk-Pod"
 
 src_install() {
 	cd ${B}
 	cyginstall
 	perl_postinst
 
-	doicon ${S}/par.png
-	make_desktop_entry tkpp "Tkpp" par "Development;Building"
+	# doicon ${S}/par.png
+	# make_desktop_entry tkpp "Tkpp" par "Development;Building"
 }

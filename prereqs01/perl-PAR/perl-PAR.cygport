@@ -1,0 +1,24 @@
+_ml="Archive::Zip PAR::Dist"
+inform " Build of perl-PAR requires"
+inform "   $_ml"
+for _m in $_ml; do
+  check_perl_module $_m || warning " Perl module $_m is missing from build environment."
+done
+if [ "x$cygport_no_error" == "x" ] && ! check_perl_module $_ml; then
+  error " At least one required perl module is missing."
+fi
+NAME="perl-PAR"
+VERSION="1.015"
+RELEASE="2"
+CPAN_AUTHOR="RSCHUPP"
+DESCRIPTION="Perl distribution PAR, providing Perl modules:
+PAR PAR::Heavy PAR::SetupProgname PAR::SetupTemp.
+
+Perl Archive Toolkit."
+
+ARCH=noarch
+DIFF_EXCLUDES="MYMETA.*"
+
+NO_PERL_DEPS=1
+REQUIRES="perl-Archive-Zip perl-PAR-Dist"
+inherit perl
