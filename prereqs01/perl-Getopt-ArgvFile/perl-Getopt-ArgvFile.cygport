@@ -1,6 +1,6 @@
 NAME="perl-Getopt-ArgvFile"
 VERSION="1.11"
-RELEASE="3"
+RELEASE=4
 CPAN_AUTHOR="JSTENZEL"
 DESCRIPTION="Perl distribution Getopt-ArgvFile, providing Perl modules:
 Getopt::ArgvFile.

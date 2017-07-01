@@ -9,7 +9,7 @@ if [ "x$cygport_no_error" == "x" ] && ! check_perl_module $_ml; then
 fi
 NAME="perl-Module-ScanDeps"
 VERSION="1.23"
-RELEASE="2"
+RELEASE=3
 CPAN_AUTHOR="RSCHUPP"
 DESCRIPTION="Perl distribution Module-ScanDeps, providing Perl modules:
 Module::ScanDeps.
