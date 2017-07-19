@@ -8,8 +8,8 @@ if [ "x$cygport_no_error" == "x" ] && ! check_perl_module $_ml; then
   error " At least one required perl module is missing."
 fi
 NAME="perl-Module-ScanDeps"
-VERSION="1.23"
-RELEASE=3
+VERSION="1.24"
+RELEASE="2"
 CPAN_AUTHOR="RSCHUPP"
 DESCRIPTION="Perl distribution Module-ScanDeps, providing Perl modules:
 Module::ScanDeps.

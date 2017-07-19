@@ -3,7 +3,7 @@ inherit perl
 
 NAME="perl-PAR-Packer"
 VERSION=1.037
-RELEASE=2
+RELEASE=3
 CATEGORY="Perl"
 SUMMARY="Perl Archive (PAR) generator module"
 DESCRIPTION="PAR is a Cross-Platform Packaging and Deployment tool,
