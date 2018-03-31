@@ -15,7 +15,7 @@ SRC_URI+=" par.png"
 
 MAKEOPTS+=" -j1"
 
-perl_PAR_Packer_REQUIRES="perl-Tk-ColoredButton perl-Tk-EntryCheck perl-Tk-Getopt perl-Tk-Pod"
+perl_PAR_Packer_REQUIRES="perl-Tk-ColoredButton perl-Tk-EntryCheck perl-Tk-Getopt perl-Tk-Pod perl-PAR perl-Archive-Zip perl-Module-ScanDeps perl-Getopt-ArgvFile"
 
 src_install() {
 	cd ${B}
