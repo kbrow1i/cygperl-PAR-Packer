@@ -2,7 +2,7 @@ CPAN_AUTHOR=rschupp
 inherit perl
 
 NAME="perl-PAR-Packer"
-VERSION=1.045
+VERSION=1.047
 RELEASE=1
 CATEGORY="Perl"
 SUMMARY="Perl Archive (PAR) generator module"
